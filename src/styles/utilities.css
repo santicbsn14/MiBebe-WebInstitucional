@@ -1,0 +1,169 @@
+/* ============================================================
+   MI BEBÉ — Utilities
+   ============================================================ */
+
+/* --- Contenedor principal --- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+/* --- Sección base --- */
+.section {
+  padding-block: clamp(var(--space-16), 8vw, var(--space-32));
+}
+
+/* --- Heading de sección --- */
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl));
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--color-blue-dark);
+}
+
+.section-subtitle {
+  font-size: clamp(var(--text-base), 2vw, var(--text-lg));
+  color: var(--color-gray-600);
+  line-height: var(--leading-relaxed);
+  max-width: 60ch;
+}
+
+/* --- Botones --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-8);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-full);
+  transition:
+    transform var(--transition-bounce),
+    box-shadow var(--transition-base),
+    background-color var(--transition-fast);
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn:hover  { transform: translateY(-2px); }
+.btn:active { transform: translateY(0) scale(0.97); }
+
+.btn-primary {
+  background: var(--color-yellow);
+  color: var(--color-gray-900);
+  box-shadow: var(--shadow-yellow);
+}
+.btn-primary:hover {
+  background: var(--color-yellow-dark);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.45);
+}
+
+.btn-secondary {
+  background: var(--color-pink);
+  color: var(--color-white);
+  box-shadow: var(--shadow-pink);
+}
+.btn-secondary:hover {
+  background: var(--color-pink-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  box-shadow: none;
+}
+.btn-outline:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.btn-lg {
+  padding: var(--space-4) var(--space-10);
+  font-size: var(--text-lg);
+}
+
+/* --- Badge / chip --- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  font-family: var(--font-display);
+}
+
+.chip-yellow { background: var(--color-yellow-light);  color: var(--color-gray-900); }
+.chip-blue   { background: var(--color-blue-pale);     color: var(--color-blue-dark); }
+.chip-pink   { background: var(--color-pink-pale);     color: var(--color-pink-dark); }
+.chip-sky    { background: var(--color-sky-light);     color: var(--color-blue-dark); }
+
+/* --- Card base --- */
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: transform var(--transition-bounce), box-shadow var(--transition-base);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* --- Nube decorativa SVG shape --- */
+.cloud-shape {
+  background: var(--color-white);
+  border-radius: 50px;
+  position: relative;
+  filter: drop-shadow(var(--shadow-md));
+}
+
+/* --- Divider ondulado --- */
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+}
+
+/* --- Flex helpers --- */
+.flex         { display: flex; }
+.flex-col     { display: flex; flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-4  { gap: var(--space-4); }
+.gap-6  { gap: var(--space-6); }
+.gap-8  { gap: var(--space-8); }
+
+/* --- Text helpers --- */
+.text-center { text-align: center; }
+.text-blue   { color: var(--color-blue); }
+.text-pink   { color: var(--color-pink); }
+.text-yellow { color: var(--color-yellow-dark); }
+
+/* --- Visually hidden (accesibilidad) --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

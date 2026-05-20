@@ -1,0 +1,155 @@
+/* ============================================================
+   MI BEBÉ — Animations
+   ============================================================ */
+
+/* --- Float (nubes, mascota) --- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33%       { transform: translateY(-8px) rotate(1deg); }
+  66%       { transform: translateY(-4px) rotate(-1deg); }
+}
+
+/* --- Nubes drifting horizontal --- */
+@keyframes driftLeft {
+  0%   { transform: translateX(0) translateY(0); }
+  50%  { transform: translateX(-20px) translateY(-6px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+@keyframes driftRight {
+  0%   { transform: translateX(0) translateY(0); }
+  50%  { transform: translateX(20px) translateY(-8px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+/* --- Pulse suave --- */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.04); }
+}
+
+/* --- Bounce entrada --- */
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(0.6) translateY(20px); }
+  60%  { opacity: 1; transform: scale(1.08) translateY(-6px); }
+  80%  { transform: scale(0.96) translateY(2px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+/* --- Fade up (scroll reveal) --- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* --- Slide in lateral --- */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* --- Wiggle (elemento lúdico) --- */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  20%       { transform: rotate(-6deg); }
+  40%       { transform: rotate(6deg); }
+  60%       { transform: rotate(-4deg); }
+  80%       { transform: rotate(4deg); }
+}
+
+/* --- Spin lento (decorativo) --- */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* --- Shimmer (loading / destacado) --- */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+/* --- Clases utilitarias de animación --- */
+.animate-float       { animation: float     3s ease-in-out infinite; }
+.animate-float-slow  { animation: floatSlow 5s ease-in-out infinite; }
+.animate-pulse       { animation: pulse     2.5s ease-in-out infinite; }
+.animate-bounce-in   { animation: bounceIn  0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+.animate-fade-up     { animation: fadeUp    0.6s ease-out both; }
+.animate-fade-in     { animation: fadeIn    0.5s ease-out both; }
+.animate-wiggle      { animation: wiggle    0.8s ease-in-out; }
+.animate-drift-left  { animation: driftLeft  6s ease-in-out infinite; }
+.animate-drift-right { animation: driftRight 8s ease-in-out infinite; }
+
+/* --- Delays utilitarios --- */
+.delay-100  { animation-delay: 100ms; }
+.delay-200  { animation-delay: 200ms; }
+.delay-300  { animation-delay: 300ms; }
+.delay-400  { animation-delay: 400ms; }
+.delay-500  { animation-delay: 500ms; }
+.delay-600  { animation-delay: 600ms; }
+.delay-800  { animation-delay: 800ms; }
+.delay-1000 { animation-delay: 1000ms; }
+
+/* --- Reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* ── Scroll Reveal ─────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity   0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal--left  { transform: translateX(-40px); }
+.reveal--left.is-visible  { transform: translateX(0); }
+
+.reveal--right { transform: translateX(40px); }
+.reveal--right.is-visible { transform: translateX(0); }
+
+.reveal--scale { transform: scale(0.88) translateY(16px); }
+.reveal--scale.is-visible { transform: scale(1) translateY(0); }
+
+.reveal-delay-1 { transition-delay: 100ms; }
+.reveal-delay-2 { transition-delay: 200ms; }
+.reveal-delay-3 { transition-delay: 300ms; }
+.reveal-delay-4 { transition-delay: 400ms; }
+.reveal-delay-5 { transition-delay: 500ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal--left,
+  .reveal--right,
+  .reveal--scale {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,12 @@
+/* ============================================================
+   MI BEBÉ — Entrada principal de estilos
+   Importa Google Fonts + capas del sistema de diseño
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@import './tokens.css';
+@import './reset.css';
+@import './animations.css';
+@import './utilities.css';
+@import './a11y.css';
