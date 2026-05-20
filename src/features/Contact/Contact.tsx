@@ -120,7 +120,7 @@ export default function Contact() {
 
       <div className="container">
         {/* Header */}
-        <div className="contact__header animate-fade-up">
+        <div className="contact__header reveal">
           <div className="chip chip-pink">💬 Hablemos</div>
           <h2 id="contact-title" className="section-title contact__title">
             ¿Querés saber más{' '}
