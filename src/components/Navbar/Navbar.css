@@ -36,15 +36,6 @@
   flex-shrink: 0;
 }
 
-.navbar__brand {
-  font-family: var(--font-display);
-  font-size: var(--text-2xl);
-  font-weight: var(--weight-bold);
-  line-height: 1;
-}
-
-.navbar__brand-mi   { color: var(--color-pink); }
-.navbar__brand-bebe { color: var(--color-blue); }
 
 /* --- Links --- */
 .navbar__links {

@@ -26,14 +26,23 @@ export default function Footer() {
             {/* Columna marca */}
             <div className="footer__brand">
               <div className="footer__logo">
-                <span className="footer__logo-mi">mi</span>
-                <span className="footer__logo-bebe">bebé</span>
+                <img
+  src="/mibebe-footer.svg"
+  alt="Mi Bebé"
+  height={100}
+  draggable={false}
+/>
               </div>
               <p className="footer__tagline">
                 Pañales desechables con el cuidado y la ternura que tu bebé merece.
               </p>
               <div className="footer__mascot" aria-hidden="true">
-                <ElephantIcon />
+                  <img
+    src="/elephant.svg"
+    alt=""
+    height={80}
+    draggable={false}
+  />
               </div>
             </div>
 

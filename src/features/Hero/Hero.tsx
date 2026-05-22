@@ -73,9 +73,15 @@ export default function Hero() {
             <div className="hero__logo-sub">Pañales Desechables</div>
           </div>
 
-          <div className="hero__elephant animate-float-slow">
-            <ElephantHero />
-          </div>
+<div className="hero__elephant animate-float-slow">
+  <img
+    src="/elephant.svg"
+    alt="Mascota Mi Bebé - Elefante"
+    width={280}
+    height={280}
+    draggable={false}
+  />
+</div>
 
           <div className="hero__deco-clouds" aria-hidden="true">
             <SmallCloud className="hero__deco-cloud hero__deco-cloud--a animate-drift-left" />

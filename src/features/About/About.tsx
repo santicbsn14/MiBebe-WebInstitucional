@@ -41,7 +41,11 @@ export default function About() {
 
         <div className="about__story">
           <div className="about__story-image reveal reveal--left">
-            <StoryIllustration />
+  <img
+    src="/elephant.svg"
+    alt="Mascota Mi Bebé - Elefante"
+    draggable={false}
+  />
             {FLOATING_CHIPS.map((chip, i) => (
               <span
                 key={chip.label}

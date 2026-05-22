@@ -39,17 +39,18 @@ export default function Navbar() {
 
         {/* Logo */}
         <a
-          href="#hero"
-          className="navbar__logo"
-          onClick={(e) => { e.preventDefault(); handleNav('#hero') }}
-          aria-label="Mi Bebé — Inicio"
-        >
-          <LogoMark />
-          <span className="navbar__brand">
-            <span className="navbar__brand-mi">mi</span>
-            <span className="navbar__brand-bebe">bebé</span>
-          </span>
-        </a>
+  href="#hero"
+  className="navbar__logo"
+  onClick={(e) => { e.preventDefault(); handleNav('#hero') }}
+  aria-label="Mi Bebé — Inicio"
+>
+  <img
+    src="/mibebe-navbar.svg"
+    alt="Mi Bebé"
+    height={124}
+    draggable={false}
+  />
+</a>
 
         {/* Links desktop */}
         <ul className="navbar__links" role="list">
