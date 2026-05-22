@@ -121,16 +121,4 @@ export default function Navbar() {
   )
 }
 
-function LogoMark() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-      {/* Nube base */}
-      <ellipse cx="18" cy="22" rx="14" ry="10" fill="#7DD9E8" />
-      <circle cx="10" cy="20" r="7" fill="#7DD9E8" />
-      <circle cx="24" cy="18" r="9" fill="#7DD9E8" />
-      <circle cx="16" cy="16" r="8" fill="#7DD9E8" />
-      {/* Punto (i) */}
-      <circle cx="22" cy="11" r="3" fill="#E8445A" />
-    </svg>
-  )
-}
+
