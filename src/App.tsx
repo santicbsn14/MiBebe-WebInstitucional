@@ -5,11 +5,17 @@ import Hero           from '@features/Hero'
 import About          from '@features/About'
 import Products       from '@features/Products'
 import Contact        from '@features/Contact'
+import ComingSoon     from '@features/ComingSoon'
 import { useScrollReveal } from './hooks/useScrollReveal'
 import '@styles/main.css'
 
+// 👇 Cambiá a false cuando el sitio esté listo para lanzar
+const COMING_SOON = true
+
 export default function App() {
   useScrollReveal({ threshold: 0.12, rootMargin: '0px 0px -50px 0px' })
+
+  if (COMING_SOON) return <ComingSoon />
 
   return (
     <>
