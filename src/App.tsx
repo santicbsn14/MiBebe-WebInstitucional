@@ -10,7 +10,7 @@ import { useScrollReveal } from './hooks/useScrollReveal'
 import '@styles/main.css'
 
 // 👇 Cambiá a false cuando el sitio esté listo para lanzar
-const COMING_SOON = true
+const COMING_SOON = false
 
 export default function App() {
   useScrollReveal({ threshold: 0.12, rootMargin: '0px 0px -50px 0px' })
