@@ -30,7 +30,7 @@ export default function Hero() {
 
           <h1 className="hero__title reveal reveal-delay-1">
             Crecemeos {' '}
-            <span className="hero__title-accent">juntos</span>{' '}
+            <span className="hero__title-accent">junto</span>{' '}
             a cada bebé
           </h1>
 
