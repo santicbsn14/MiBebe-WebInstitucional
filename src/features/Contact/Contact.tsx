@@ -19,10 +19,10 @@ const SUBJECTS: { value: ContactSubject; label: string }[] = [
 ]
 
 const CONTACT_INFO = [
-  { icon: '✉️', label: 'Email',     value: 'contacto@mibebe.com.ar', href: 'mailto:contacto@mibebe.com.ar' },
-  { icon: '📞', label: 'Teléfono', value: '+54 (11) 0000-0000',       href: 'tel:+541100000000' },
-  { icon: '📍', label: 'Ubicación', value: 'Villa Constitución, Santa Fe',  href: undefined },
-  { icon: '⏰', label: 'Horario',   value: 'Lun–Vie 9:00–18:00',      href: undefined },
+  { icon: '✉️', label: 'Email',   value: 'ventas@mibebeargentina.com', href: 'mailto:ventas@mibebeargentina.com' },
+  { icon: '📞', label: 'Teléfono', value: '+54 (336) 4577043',       href: 'tel:+541100000000' },
+  { icon: '📍', label: 'Ubicación', value: 'Villa Constitución, Santa Fe, Argentina',  href: undefined },
+  { icon: '📸', label: 'Instagram', value: '@mibebe.argentina', href: 'https://instagram.com/mibebe.argentina' },
 ]
 
 /* --- Validación --- */

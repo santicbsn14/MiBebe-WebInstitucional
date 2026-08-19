@@ -3,9 +3,9 @@ import './About.css'
 
 const BRAND_VALUES: BrandValue[] = [
   { id: 'suavidad',  icon: '🌸', title: 'Suavidad',   description: 'Materiales ultra suaves que cuidan la delicada piel de tu bebé en cada momento.',                              color: 'pink'   },
-  { id: 'confianza', icon: '🛡️', title: 'Confianza',  description: 'Fabricados con los más altos estándares de calidad para que puedas confiar plenamente.',                       color: 'blue'   },
-  { id: 'comodidad', icon: '☁️', title: 'Comodidad',  description: 'Diseño ergonómico que se adapta a los movimientos de tu bebé, sin restricciones.',                             color: 'sky'    },
-  { id: 'familia',   icon: '💛', title: 'Familia',    description: 'Pensados para toda la familia, porque sabemos que cada momento importa.',                                       color: 'yellow' },
+  { id: 'protección', icon: '🛡️', title: 'Protección',  description: 'Alta absorción y un ajuste seguro para acompañar cada momento con tranquilidad.',                       color: 'blue'   },
+  { id: 'comodidad', icon: '☁️', title: 'Comodidad',  description: 'Diseño amplio y confortable que acompaña cada movimiento y se adapta al crecimiento de tu bebé.',                             color: 'sky'    },
+  { id: 'calidad',   icon: '💛', title: 'Calidad',    description: ' Elaborados bajo estándares de calidad y comercializados en Argentina por un importador habilitado por ANMAT.',                                       color: 'yellow' },
 ]
 
 const FLOATING_CHIPS = [
@@ -29,13 +29,11 @@ export default function About() {
         <div className="about__header reveal">
           <div className="chip chip-sky">✨ Quiénes somos</div>
           <h2 id="about-title" className="section-title about__title">
-            Una marca nueva,{' '}
-            <span className="about__title-accent">con mucho amor</span>
+            Creada para cuidar,{' '}
+            <span className="about__title-accent">lo que mas querés</span>
           </h2>
           <p className="section-subtitle about__lead">
-            Mi Bebé nació con una convicción simple: que cada bebé merece lo mejor.
-            Somos una marca argentina que llega con fuerza para acompañar a las
-            familias en cada etapa del crecimiento.
+Mi Bebé nació con un propósito claro: ofrecer pañales que combinen calidad, comodidad y protección para acompañar a las familias en cada etapa del crecimiento de sus hijos.
           </p>
         </div>
 
@@ -58,19 +56,12 @@ export default function About() {
           </div>
 
           <div className="about__story-text reveal reveal--right">
-            <h3 className="about__story-title">De Villa Constitución para todo el país</h3>
+            <h3 className="about__story-title">Listos para llegar a todos los Argentinos</h3>
             <p>
-              Nacemos en Villa Constitución, Santa Fe, con el objetivo de ofrecer
-              pañales desechables de calidad, accesibles para todas las familias
-              argentinas. Creemos que los primeros años de un bebé son únicos e
-              irrepetibles, y queremos estar presentes en cada momento: desde las
-              noches tranquilas hasta las aventuras del día a día.
+En Mi Bebé desarrollamos pañales pensados para brindar comodidad, protección y alta absorción, acompañando el crecimiento de los más pequeños en cada etapa. Nuestro compromiso es ofrecer productos confiables que combinen un ajuste seguro con la tranquilidad que las familias buscan todos los días.
             </p>
             <p>
-              Nuestra línea combina una absorción eficiente con materiales
-              hipoalergénicos y suaves, cuidando la piel de tu bebé en cada uso.
-              Disponibles en 5 tallas, desde recién nacido hasta extra grande,
-              para acompañar cada etapa de su crecimiento.
+Nuestra línea está disponible en cinco talles —Pequeño, Mediano, Grande, Extra Grande y Extra Extra Grande— diseñados con un calce amplio y cómodo, permitiendo acompañar el crecimiento de tu bebé por más tiempo y brindando mayor libertad de movimiento. Comercializados en Argentina por un importador habilitado por ANMAT, reflejan nuestro compromiso con la calidad y la confianza.
             </p>
             <div className="about__story-cta">
               <a
@@ -89,7 +80,7 @@ export default function About() {
 
         <div className="about__values-header reveal">
           <h3 className="about__values-title">Nuestros pilares</h3>
-          <p className="about__values-subtitle">Los valores que guían cada pañal que hacemos</p>
+          <p className="about__values-subtitle">Los valores que inspiran cada pañal Mi Bebé.</p>
         </div>
 
         <div className="about__values">

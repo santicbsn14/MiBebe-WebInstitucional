@@ -25,19 +25,17 @@ export default function Hero() {
       <div className="container hero__inner">
         <div className="hero__content">
           <div className="chip chip-yellow reveal">
-            🌟 Una nueva forma de cuidar a tu bebé
+            🌟 Pensados para cuidar lo que más querés
           </div>
 
           <h1 className="hero__title reveal reveal-delay-1">
-            Suavidad y{' '}
-            <span className="hero__title-accent">ternura</span>{' '}
-            desde el primer día
+            Crecemeos {' '}
+            <span className="hero__title-accent">juntos</span>{' '}
+            a cada bebé
           </h1>
 
           <p className="hero__subtitle reveal reveal-delay-2">
-            Mi Bebé llegó para acompañar cada etapa de tu bebé con pañales
-            desechables de calidad, pensados con amor desde Villa Constitución,
-            Santa Fe.
+            Cada etapa del crecimiento merece el mejor cuidado. Por eso desarrollamos pañales que ofrecen comodidad, absorción y protección para tu bebé.
           </p>
 
           <div className="hero__actions reveal reveal-delay-3">
@@ -50,7 +48,7 @@ export default function Hero() {
           </div>
 
           <div className="hero__stats reveal reveal-delay-4">
-            {(['RN','P','M','G','XG'] as const).map((size) => (
+            {([,'P','M','G','XG', 'XXG'] as const).map((size) => (
               <button
                 key={size}
                 className="hero__stat hero__stat--size"

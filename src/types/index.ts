@@ -3,7 +3,7 @@
    ============================================================ */
 
 /* --- Productos --- */
-export type ProductSize = 'RN' | 'P' | 'M' | 'G' | 'XG'
+export type ProductSize = 'RN' | 'P' | 'M' | 'G' | 'XG' | 'XXG'
 
 export interface Product {
   id: string
